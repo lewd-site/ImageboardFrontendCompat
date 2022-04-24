@@ -1,0 +1,23 @@
+.postform {
+  input[type='text'],
+  textarea {
+    background: #3e4249;
+    color: #eee;
+
+    border: 0;
+    border-radius: 5px;
+
+    display: inline-flex;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    height: 100%;
+
+    padding: 3px;
+  }
+
+  input[type='submit'] {
+    @extend %button;
+  }
+}

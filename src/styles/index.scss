@@ -1,0 +1,34 @@
+@import './variables';
+@import './mixins';
+@import './fonts';
+@import './animations';
+@import './reset';
+@import './icons';
+@import './markup';
+@import './table';
+@import './layout';
+@import './post';
+@import './post-form';
+@import './pages/index';
+
+.de-win,
+.de-win-body:not(#de-pform),
+.de-menu,
+.de-pview {
+  background: #43474f;
+}
+
+.de-abtn:not(.de-panel-button) {
+  @extend %button;
+}
+
+.de-post-counter-you {
+  color: inherit !important;
+}
+
+div[de-thread] {
+  div.de-oppost + table,
+  table + table {
+    margin-top: 8px;
+  }
+}
